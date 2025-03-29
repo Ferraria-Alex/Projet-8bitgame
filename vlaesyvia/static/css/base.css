@@ -1,0 +1,157 @@
+/* FONT IMPORT */
+
+@font-face {
+    font-family: 'RobotoFlex';
+    font-stretch: 75% 125%;
+    font-style: normal;
+    font-weight: 100 900;
+    src: url('../fonts/RobotoFlex_Variable.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Upheaval TT';
+    src: url('../fonts/UpheavalTT.woff2') format('woff2');
+}
+
+/* RESET CSS */
+
+:where(html, body) {
+    font-family: 'RobotoFlex', 'Lucida Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 1rem;
+    color: white;
+}
+
+:where(ol, ul) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+:where(img, picture, video, canvas, svg) {
+    max-width: 100%;
+    display: block;
+}
+  
+:where(img) {
+    height: auto;
+}
+
+/* - TITLES - */
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Upheaval TT', Impact, monospace;
+    letter-spacing: 4%;
+}
+
+h1 {
+    font-size: 3rem;
+
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+/* - HEADER - */
+
+header {
+    background: rgb(115,0,113);
+    background: -moz-linear-gradient(180deg, rgba(115,0,113,1) 0%, rgba(220,106,207,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(115,0,113,1) 0%, rgba(220,106,207,1) 100%);
+    background: linear-gradient(180deg, rgba(115,0,113,1) 0%, rgba(220,106,207,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#730071",endColorstr="#dc6acf",GradientType=1);
+    border-radius: 0 0 0.5rem 0.5rem;
+    outline: 0.3rem solid black;
+    position: sticky;
+    top: -1px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: black;
+    top: 35px;
+    width: 125px;
+    height: 125px;
+    border-radius: 0.3rem;
+}
+
+header img {
+    color: white;
+    text-align: center;
+}
+
+header ul li a {
+    font-family: 'Upheaval TT', Impact, monospace;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+}
+
+header ul li a:hover{
+    border-bottom: 5px solid black;
+}
+
+/* - COMMON - */
+
+.flex{
+    display: flex;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-grow{
+    flex-grow: 1;
+}
+
+.block-sm{
+    width: 25dvw;
+}
+
+.block-md{
+    width: 35dvw;
+}
+
+.block-lg{
+    width: 45dvw;
+}
+
+.container {
+    width: 80dvw;
+    margin: 5rem auto 0 auto;
+}
+
+/* - FOOTER - */
