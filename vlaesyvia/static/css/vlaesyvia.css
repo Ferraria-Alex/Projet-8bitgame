@@ -1,0 +1,52 @@
+main {
+    margin-bottom: 2rem !important;
+}
+
+section {
+    padding: 1.25rem;
+}
+
+.gameButton {
+    background-color: #FEFCFD;
+    border-radius: 0.5rem;
+    outline: 0.2rem solid #1E1E1E;
+    text-align: center;
+    width: 225px;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+.gameButton:hover {
+    outline: 0.4rem solid #1E1E1E;
+}
+
+#game {
+    width: 1250px;
+    height: 500px;
+    outline: 0.2rem solid #1E1E1E;
+    border-radius: 0.3rem;
+}
+
+.powers img {
+    width: 40px;
+    outline: 0.2rem solid #1E1E1E;
+    border-radius: 0.3rem;
+    margin: 0.2rem 0.75rem;
+}
+
+.char {
+    width: 250px;
+    height: 250px;
+    outline: 0.2rem solid #1E1E1E;
+    border-radius: 0.3rem;
+    background-color: #FEFCFD;
+}
+
+.char img {
+    width: 200px;
+    height: 200px;
+}
+
+.gameplay-container {
+    width: 1275px;
+}

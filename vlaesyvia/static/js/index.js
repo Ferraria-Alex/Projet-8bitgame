@@ -1,15 +1,20 @@
 // Class Stories
 
+// Get necessary DOM elements
 const knight = document.getElementById('knight');
 const kunoichi = document.getElementById('kunoichi');
 const mage = document.getElementById('mage');
+const knightText = document.getElementById('knight-text');
+const kunoichiText = document.getElementById('kunoichi-text');
+const mageText = document.getElementById('mage-text');
 
+// Activate on click on DOM constant knight 
 knight.addEventListener('click', (e)=>{
 
-    const knightText = document.getElementById('knight-text');
-    const kunoichiText = document.getElementById('kunoichi-text');
-    const mageText = document.getElementById('mage-text');
-
+    /*
+    Verifying current location of class "container-red-gold" in both constants (mage, kunoichi)
+    If found removing it and adding class "outline-purple" also adding class "none" to one of the constants (kunoichiText, mageText)
+    */
     if(kunoichi.firstElementChild.classList.contains("container-red-gold")){
         kunoichi.firstElementChild.classList.remove('container-red-gold');
         kunoichi.firstElementChild.classList.add('outline-purple');
@@ -22,17 +27,17 @@ knight.addEventListener('click', (e)=>{
         mageText.classList.add('none');
     }
 
+    /*
+    Removes class "outline-purple" from constant (knight)
+    Adds class "container-red-gold" from constant (knight)
+    Removes class "none" from constant (knightText)
+    */
     knight.firstElementChild.classList.remove('outline-purple');
     knight.firstElementChild.classList.add('container-red-gold');
     knightText.classList.remove('none');
 });
 
 kunoichi.addEventListener('click', (e)=>{
-
-    const knightText = document.getElementById('knight-text');
-    const kunoichiText = document.getElementById('kunoichi-text');
-    const mageText = document.getElementById('mage-text');
-
     if(knight.firstElementChild.classList.contains("container-red-gold")){
         knight.firstElementChild.classList.remove('container-red-gold');
         knight.firstElementChild.classList.add('outline-purple');
@@ -51,11 +56,6 @@ kunoichi.addEventListener('click', (e)=>{
 });
 
 mage.addEventListener('click', (e)=>{
-
-    const knightText = document.getElementById('knight-text');
-    const kunoichiText = document.getElementById('kunoichi-text');
-    const mageText = document.getElementById('mage-text');
-
     if(knight.firstElementChild.classList.contains("container-red-gold")){
         knight.firstElementChild.classList.remove('container-red-gold');
         knight.firstElementChild.classList.add('outline-purple');
